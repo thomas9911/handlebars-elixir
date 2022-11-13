@@ -1,0 +1,15 @@
+[package]
+name = "handlebars_rs"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "handlebars_rs"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+handlebars = "4.3.5"
+rustler = "0.26.0"
+serde = { version = "1.0.147", features = ["derive"] }
